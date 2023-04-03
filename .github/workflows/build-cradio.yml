@@ -19,7 +19,7 @@ jobs:
               branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
           - name: checkout code
             uses: actions/checkout@v3
-          # - name: 'Upload cradio left'
+          - name: 'Upload cradio left'
             uses: actions/upload-artifact@v3
             with:
               name: cradio-left
