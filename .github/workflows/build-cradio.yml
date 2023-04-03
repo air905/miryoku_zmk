@@ -1,32 +1,30 @@
 # Copyright 2022 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build cradio '
+name: 'Build cradio'
 on: push
 jobs:
   job_1:
-    build:
-      name: build cradio left firmware
-      uses: ./.github/workflows/main.yml
-      secrets: inherit
-      with:
-        board: '["nice_nano_v2"]'
-        shield: '["cradio_left"]'
-        custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
-        kconfig: '["CONFIG_ZMK_MOUSE=y"]'
-        branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
+    name: build cradio left firmware
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["nice_nano_v2"]'
+      shield: '["cradio_left"]'
+      custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
+      kconfig: '["CONFIG_ZMK_MOUSE=y"]'
+      branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
   job_2:
-    build:
-      name: build cradio right firmware
-      needs: job_2
-      uses: ./.github/workflows/main.yml
-      # secrets: inherit
-      with:
-        board: '["nice_nano_v2"]'
-        shield: '["cradio_right"]'
-        custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
-        kconfig: '["CONFIG_ZMK_MOUSE=y"]'
-        branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
+    name: build cradio right firmware
+    needs: job_2
+    uses: ./.github/workflows/main.yml
+    # secrets: inherit
+    with:
+      board: '["nice_nano_v2"]'
+      shield: '["cradio_right"]'
+      custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
+      kconfig: '["CONFIG_ZMK_MOUSE=y"]'
+      branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
   # job_3:
   #     name: download cradio firmware
   #     # runs-on: ubuntu-latest
