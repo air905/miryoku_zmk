@@ -14,7 +14,7 @@ jobs:
       custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
       kconfig: '["CONFIG_ZMK_MOUSE=y"]'
       branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
-      name: cradio-left
+      # name: cradio-left
   job_2:
     name: build cradio right firmware
     needs: job_1
@@ -26,7 +26,7 @@ jobs:
       custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
       kconfig: '["CONFIG_ZMK_MOUSE=y"]'
       branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
-      name: cradio-right
+      # name: cradio-right
   job_3:
       name: download cradio firmware
       runs-on: ubuntu-latest
