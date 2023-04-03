@@ -20,7 +20,7 @@ jobs:
       name: build cradio right firmware
       needs: job_2
       uses: ./.github/workflows/main.yml
-      secrets: inherit
+      # secrets: inherit
       with:
         board: '["nice_nano_v2"]'
         shield: '["cradio_right"]'
