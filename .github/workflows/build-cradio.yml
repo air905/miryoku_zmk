@@ -4,26 +4,11 @@
 name: 'Build cradio'
 on: push
 jobs:
-  job_1:
-    name: build cradio left firmware
-    steps:
-      uses: ./.github/workflows/main.yml
-      secrets: inherit
-      with:
-        board: '["nice_nano_v2"]'
-        shield: '["cradio_left"]'
-        custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
-        kconfig: '["CONFIG_ZMK_MOUSE=y"]'
-        branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
-  job_2:
-    name: build cradio right firmware
-    needs: job_1
-    steps:
-      uses: ./.github/workflows/main.yml
-      secrets: inherit
-      with:
-        board: '["nice_nano_v2"]'
-        shield: '["cradio_right"]'
-        custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
-        kconfig: '["CONFIG_ZMK_MOUSE=y"]'
-        branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["nice_nano_v2"]'
+      shield: '["cradio_left","cradio_right"]'
+      custom_config: '["#define MIRYOKU_KLUDGE_SUSPEND"]'
+      branches: '["zmkfirmware/zmk/main manna-harbour/zmk/suspend-test"]'
