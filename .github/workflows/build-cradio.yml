@@ -30,4 +30,13 @@ jobs:
   job_3:
       name: download cradio firmware
       needs: job_2
-      uses: actions/download-artifact@v3
+      # uses: actions/download-artifact@v3
+      steps:
+      - uses: actions/checkout@v3
+          
+      - uses: actions/download-artifact@v3
+        with:
+          name: my-artifact
+              
+      - name: Display structure of downloaded files
+        run: ls -R
