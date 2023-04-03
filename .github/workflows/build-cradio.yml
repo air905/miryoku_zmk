@@ -7,12 +7,12 @@ jobs:
     job_1:
         name: job 1
         runs-on: ubuntu-latest
-        secrets: inherit
         steps:
           - name: checkout code
             uses: actions/checkout@v3
           - name: build cradio left
             uses: ./.github/workflows/main.yml
+            # secrets: inherit
             with:
               board: '["nice_nano_v2"]'
               shield: '["cradio_left"]'
@@ -31,7 +31,7 @@ jobs:
       steps:
         - name: build cradio right
           uses: ./.github/workflows/main.yml
-          secrets: inherit
+          # secrets: inherit
           with:
             board: '["nice_nano_v2"]'
             shield: '["cradio_right"]'
