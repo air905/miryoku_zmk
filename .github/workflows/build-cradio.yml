@@ -4,57 +4,57 @@
 name: 'Build cradio'
 on: push
 jobs:
-  job_1:
-    name: job 1
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout code
-        uses: actions/checkout@v3
-      - name: build cradio left
-        uses: ./.githubuild cradio left firmwareb/workflows/main.yml
-        secrets: inherit
-        with:
-          board: '["nice_nano_v2"]'
-          shield: '["cradio_left"]'
-          custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
-          kconfig: '["CONFIG_ZMK_MOUSE=y"]'
-          branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
-    - name: 'Upload cradio left'
-      uses: actions/upload-artifact@v3
-      with:
-        name: cradio-left
-        path: ./cradio_files/
-  job_2:
-    name: build cradio right firmware
-    runs-on: ubuntu-latest
-    needs: job_1
-    steps:
-      - name: build cradio right
-        uses: ./.githubuild cradio left firmwareb/workflows/main.yml
-        secrets: inherit
-        with:
-          board: '["nice_nano_v2"]'
-          shield: '["cradio_right"]'
-          custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
-          kconfig: '["CONFIG_ZMK_MOUSE=y"]'
-          branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
-    - name: 'Upload cradio right'
-      uses: actions/upload-artifact@v3
-      with:
-        name: cradio-right
-        path: ./cradio_files/
-  job_3:
-    name: job 333
-    runs-on: ubuntu-latest
-    needs: job_2
-    steps:
-      - name: download cradio left
-        uses: actions/download-artifact@v3
-        with:
-          name: cradio-left
-          path: ./cradio_files/
-      - name: download cradio left
-        uses: actions/download-artifact@v3
-        with:
-          name: cradio-right
-          path: ./cradio_files/
+    job_1:
+      name: job 1
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout code
+          uses: actions/checkout@v3
+          - name: build cradio left
+            uses: ./.githubuild cradio left firmwareb/workflows/main.yml
+            secrets: inherit
+            with:
+              board: '["nice_nano_v2"]'
+              shield: '["cradio_left"]'
+              custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
+              kconfig: '["CONFIG_ZMK_MOUSE=y"]'
+              branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
+              - name: 'Upload cradio left'
+                uses: actions/upload-artifact@v3
+                with:
+                  name: cradio-left
+                  path: ./cradio_files/
+    job_2:
+      name: build cradio right firmware
+      runs-on: ubuntu-latest
+      needs: job_1
+      steps:
+        - name: build cradio right
+          uses: ./.githubuild cradio left firmwareb/workflows/main.yml
+          secrets: inherit
+          with:
+            board: '["nice_nano_v2"]'
+            shield: '["cradio_right"]'
+            custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
+            kconfig: '["CONFIG_ZMK_MOUSE=y"]'
+            branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
+            - name: 'Upload cradio right'
+              uses: actions/upload-artifact@v3
+              with:
+                name: cradio-right
+                path: ./cradio_files/
+    job_3:
+      name: job 333
+      runs-on: ubuntu-latest
+      needs: job_2
+      steps:
+        - name: download cradio left
+          uses: actions/download-artifact@v3
+          with:
+            name: cradio-left
+            path: ./cradio_files/
+            - name: download cradio left
+              uses: actions/download-artifact@v3
+              with:
+                name: cradio-right
+                path: ./cradio_files/
