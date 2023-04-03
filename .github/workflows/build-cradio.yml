@@ -12,3 +12,5 @@ jobs:
       shield: '["cradio_left","cradio_right"]'
       custom_config: '["#define MIRYOKU_KLUDGE_SUSPEND"]'
       branches: '["zmkfirmware/zmk/main manna-harbour/zmk/suspend-test"]'
+      artifact_name: cradio-firmware
+
