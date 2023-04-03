@@ -38,11 +38,11 @@ jobs:
             custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
             kconfig: '["CONFIG_ZMK_MOUSE=y"]'
             branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
-            - name: 'Upload cradio right'
-              uses: actions/upload-artifact@v3
-              with:
-                name: cradio-right
-                path: ./cradio_files/
+        - name: 'Upload cradio right'
+          uses: actions/upload-artifact@v3
+          with:
+            name: cradio-right
+            path: ./cradio_files/
     job_3:
       name: job 3
       runs-on: ubuntu-latest
