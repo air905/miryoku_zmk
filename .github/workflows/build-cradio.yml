@@ -15,7 +15,11 @@ jobs:
         custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
         kconfig: '["CONFIG_ZMK_MOUSE=y"]'
         branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
-      uses: actions/checkout@v3
+      # uses: actions/checkout@v3
+      # uses: actions/upload-artifact@v3
+      #   with:
+      #     name: cradio-left
+    - name: 'Upload Artifact'
       uses: actions/upload-artifact@v3
         with:
           name: cradio-left
@@ -45,7 +49,7 @@ jobs:
 
       steps:
         uses: actions/checkout@v3
-        uses: actions/download-artifact@v3
+       uses: actions/download-artifact@v3
       #   with:
       #     name: cradio-left
       #     path: ~/Downloads/
