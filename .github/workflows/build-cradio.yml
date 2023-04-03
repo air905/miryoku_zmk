@@ -53,8 +53,8 @@ jobs:
           with:
             name: cradio-left
             path: ./cradio_files/
-            - name: download cradio left
-              uses: actions/download-artifact@v3
-              with:
-                name: cradio-right
-                path: ./cradio_files/
+        - name: download cradio left
+          uses: actions/download-artifact@v3
+          with:
+            name: cradio-right
+            path: ./cradio_files/
