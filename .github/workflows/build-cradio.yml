@@ -27,7 +27,7 @@ jobs:
       branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
   job_3:
       name: download cradio firmware
-      # runs-on: ubuntu-latest
+      runs-on: ubuntu-latest
       needs: job_2
       # steps:
       # - name: download artifact
