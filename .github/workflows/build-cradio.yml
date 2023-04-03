@@ -30,7 +30,7 @@ jobs:
       needs: job_1
       steps:
         - name: build cradio right
-          uses: ./.githubu firmwareb/workflows/main.yml
+          uses: ./.github/workflows/main.yml
           secrets: inherit
           with:
             board: '["nice_nano_v2"]'
