@@ -38,13 +38,13 @@ jobs:
       steps:
       - uses: actions/checkout@v3
       - uses: actions/download-artifact@v3
-        with:
-          name: cradio-left
-          path: ~/Downloads/
-      - uses: actions/download-artifact@v3
-        with:
-          name: cradio-right    
-          path: ~/Downloads/
+      #   with:
+      #     name: cradio-left
+      #     path: ~/Downloads/
+      # - uses: actions/download-artifact@v3
+      #   with:
+      #     name: cradio-right    
+      #     path: ~/Downloads/
               
-      # - name: Display structure of downloaded files
-      #   run: ls -R
+      # # - name: Display structure of downloaded files
+      # #   run: ls -R
