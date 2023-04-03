@@ -16,7 +16,7 @@ jobs:
       branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
   job_2:
     name: build cradio right firmware
-    needs: job_2
+    needs: job_1
     uses: ./.github/workflows/main.yml
     # secrets: inherit
     with:
