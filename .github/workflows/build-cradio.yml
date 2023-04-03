@@ -8,8 +8,6 @@ jobs:
         name: job 1
         runs-on: ubuntu-latest
         steps:
-          - name: checkout code
-            uses: actions/checkout@v3
           - name: build cradio left
             uses: ./.github/workflows/main.yml
             # secrets: inherit
@@ -19,6 +17,8 @@ jobs:
               custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
               kconfig: '["CONFIG_ZMK_MOUSE=y"]'
               branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
+          - name: checkout code
+            uses: actions/checkout@v3
           - name: 'Upload cradio left'
             uses: actions/upload-artifact@v3
             with:
