@@ -154,7 +154,7 @@ MIRYOKU_LAYER_LIST
     keymap {
         compatible = "zmk,keymap";
 
-        MIRYOKU_LAYER_BASE {
+        default_layer {
             bindings = <
                 &td_mt
             >;
