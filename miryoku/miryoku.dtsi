@@ -56,22 +56,22 @@ MIRYOKU_LAYER_LIST
 / {
   combos {
     compatible = "zmk,combos";
-    combo_lgui {
+    combo_lalt {
       timeout-ms = <50>;
       key-positions = <0 10>;
       bindings = <&to LALT>;
     };
-    combo_rgui {
+    combo_ralt {
       timeout-ms = <50>;
       key-positions = <9 19>;
       bindings = <&sk RALT>;
     };
-    combo_lalt {
+    combo_lgui {
       timeout-ms = <50>;
       key-positions = <1 11>;
       bindings = <&sk LGUI>;
     };
-    combo_ralt {
+    combo_rgui {
       timeout-ms = <50>;
       key-positions = <8 18>;
       bindings = <&sk RGUI>;
