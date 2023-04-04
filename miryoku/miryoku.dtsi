@@ -95,6 +95,7 @@ MIRYOKU_LAYER_LIST
       timeout-ms = <50>;
       key-positions = <6 16>;
       bindings = <&sk RSHIFT>;
+    };
     combo_mouse {
       timeout-ms = <50>;
       key-positions = <10 20>;
@@ -129,6 +130,7 @@ MIRYOKU_LAYER_LIST
       timeout-ms = <50>;
       key-positions = <19 29>;
       bindings = <&to U_FUN>;
+    };
     combo_rbase {
       timeout-ms = <50>;
       key-positions = <13 23>;
