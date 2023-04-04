@@ -98,7 +98,7 @@ MIRYOKU_LAYER_LIST
     combo_mouse {
       timeout-ms = <50>;
       key-positions = <12 22>;
-      bindings = <&sl 5>;
+      bindings = <&to U_MOUSE>;
     };
     combo_sym {
       timeout-ms = <50>;
