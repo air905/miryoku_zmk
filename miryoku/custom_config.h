@@ -8,16 +8,23 @@
     U_NP,              U_NP,              &kp ESC,  &kp SPACE,   &kp TAB,  &kp RET,   &key_repeat,  &kp DEL,  U_NP,              U_NP
 
 
-#define MIRYOKU_LAYER_STENO                                              \
+/* #define MIRYOKU_LAYER_STENO                                              \ */
+/*   &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT, \ */
+/*     &kp A,     &kp R,     &kp S,    &kp T,    &kp G,             &kp M,             &kp N,    &kp E,    &kp I,     &kp O, \ */
+/*     &kp LALT,       &kp LGUI,     &kp LCTRL,             &kp LSHIFT,             &kp V,             &kp K,             &kp LSHIFT,             &kp RCTRL,         &kp RGUI,   &kp RALT, \ */
+/*     U_NP,              U_NP,              &kp ESC,  &kp SPACE,   &kp TAB,  &kp RET,   &kp BSPC,  &kp DEL,  U_NP,              U_NP */
+
+
+#define MIRYOKU_ALTERNATIVES_TAP_COLEMAKDH                              \
   &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT, \
-    &kp A,     &kp R,     &kp S,    &kp T,    &kp G,             &kp M,             &kp N,    &kp E,    &kp I,     &kp O, \
-    &kp LALT,       &kp LGUI,     &kp LCTRL,             &kp LSHIFT,             &kp V,             &kp K,             &kp LSHIFT,             &kp RCTRL,         &kp RGUI,   &kp RALT, \
-    U_NP,              U_NP,              &kp ESC,  &kp SPACE,   &kp TAB,  &kp RET,   &kp BSPC,  &kp DEL,  U_NP,              U_NP
+    &kp A,             &kp R,             &kp S,             &kp T,             &kp G,             &kp M,             &kp N,             &kp E,             &kp I,             &kp O, \
+      &kp LALT,       &kp LGUI,     &kp LCTRL,             &kp LSHIFT,             &kp V,             &kp K,             &kp LSHIFT,             &kp RCTRL,         &kp RGUI,   &kp RALT, \
+    U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp TAB,           &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
 
 #define MIRYOKU_LAYER_MOUSE                                      \
   U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND, \
-    &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_NU,              U_MS_L,            U_MS_D,            U_MS_U,            U_MS_R, \
+    &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &to U_TAP,              U_MS_L,            U_MS_D,            U_MS_U,            U_MS_R, \
     U_NA,              &kp RALT,          &u_to_U_SYM,       &u_to_U_MOUSE,     U_NA,              U_NU,              U_WH_L,            U_WH_D,            U_WH_U,            U_WH_R, \
     U_NP,              U_NP,              U_NA,              &to U_BASE,              U_NA,              U_BTN1,            U_BTN2,            U_BTN3,            U_NP,              U_NP
 
@@ -54,27 +61,27 @@
     U_NP,              U_NP,              &kp DOT,           &kp N0,            &kp MINUS,         U_NA,              &to U_BASE,              U_NA,              U_NP,              U_NP
 
 
-#define MIRYOKU_LAYER_LIST                      \
-  MIRYOKU_X(BASE,   "Base")                     \
-    MIRYOKU_X(EXTRA,  "Extra")                  \
-    MIRYOKU_X(TAP,    "Tap")                    \
-    MIRYOKU_X(BUTTON, "Button")                 \
-    MIRYOKU_X(NAV,    "Nav")                    \
-    MIRYOKU_X(MOUSE,  "Mouse")                  \
-    MIRYOKU_X(MEDIA,  "Media")                  \
-    MIRYOKU_X(NUM,    "Num")                    \
-    MIRYOKU_X(SYM,    "Sym")                    \
-    MIRYOKU_X(FUN,    "Fun")                    \
-    MIRYOKU_X(STENO,  "Steno")
+/* #define MIRYOKU_LAYER_LIST                      \ */
+/*   MIRYOKU_X(BASE,   "Base")                     \ */
+/*   MIRYOKU_X(EXTRA,  "Extra")                  \ */
+/*   MIRYOKU_X(TAP,    "Tap")                    \ */
+/*   MIRYOKU_X(BUTTON, "Button")                 \ */
+/*   MIRYOKU_X(NAV,    "Nav")                    \ */
+/*   MIRYOKU_X(MOUSE,  "Mouse")                  \ */
+/*   MIRYOKU_X(MEDIA,  "Media")                  \ */
+/*   MIRYOKU_X(NUM,    "Num")                    \ */
+/*   MIRYOKU_X(SYM,    "Sym")                    \ */
+/*   MIRYOKU_X(FUN,    "Fun")                    \ */
+/*   MIRYOKU_X(STENO,  "Steno") */
 
-#define U_BASE   0
-#define U_EXTRA  1
-#define U_TAP    2
-#define U_BUTTON 3
-#define U_NAV    4
-#define U_MOUSE  5
-#define U_MEDIA  6
-#define U_NUM    7
-#define U_SYM    8
-#define U_FUN    9
-#define U_STENO  10
+/* #define U_BASE   0 */
+/* #define U_EXTRA  1 */
+/* #define U_TAP    2 */
+/* #define U_BUTTON 3 */
+/* #define U_NAV    4 */
+/* #define U_MOUSE  5 */
+/* #define U_MEDIA  6 */
+/* #define U_NUM    7 */
+/* #define U_SYM    8 */
+/* #define U_FUN    9 */
+/* #define U_STENO  10 */
