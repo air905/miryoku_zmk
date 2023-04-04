@@ -58,7 +58,7 @@ MIRYOKU_LAYER_LIST
     combo_esc {
       timeout-ms = <50>;
       key-positions = <0 10>;
-      bindings = <&kp LGUI>;
+      bindings = <&sk LGUI>;
     };
   };
   };
