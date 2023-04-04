@@ -67,22 +67,22 @@ MIRYOKU_LAYER_LIST
     };
     combo_lalt {
       timeout-ms = <50>;
-      key-positions = <0 10>;
+      key-positions = <1 11>;
       bindings = <&sk LALT>;
     };
     combo_ralt {
       timeout-ms = <50>;
-      key-positions = <9 19>;
+      key-positions = <8 18>;
       bindings = <&sk RALT>;
     };
     combo_lctrl {
       timeout-ms = <50>;
-      key-positions = <0 10>;
+      key-positions = <2 12>;
       bindings = <&sk LCTRL>;
     };
     combo_rctrl {
       timeout-ms = <50>;
-      key-positions = <9 19>;
+      key-positions = <7 17>;
       bindings = <&sk RCRTL>;
     };
   };
