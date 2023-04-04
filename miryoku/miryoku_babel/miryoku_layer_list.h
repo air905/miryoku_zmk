@@ -16,8 +16,7 @@ MIRYOKU_X(MOUSE,  "Mouse") \
 MIRYOKU_X(MEDIA,  "Media") \
 MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
-MIRYOKU_X(FUN,    "Fun") \
-MIRYOKU_X(STENO,  "Steno")
+MIRYOKU_X(FUN,    "Fun")
 
 #define U_BASE   0
 #define U_EXTRA  1
@@ -29,6 +28,5 @@ MIRYOKU_X(STENO,  "Steno")
 #define U_NUM    7
 #define U_SYM    8
 #define U_FUN    9
-#define U_STENO  10
 
 #endif

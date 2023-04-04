@@ -52,3 +52,29 @@
     &kp SEMI,          &kp N4,            &kp N5,            &kp N6,            &kp EQUAL,         U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI, \
     &kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp BSLH,          U_NA,              &u_to_U_NUM,       &u_to_U_NAV,       &kp RALT,          U_NA, \
     U_NP,              U_NP,              &kp DOT,           &kp N0,            &kp MINUS,         U_NA,              &to U_BASE,              U_NA,              U_NP,              U_NP
+
+
+#define MIRYOKU_LAYER_LIST                      \
+  MIRYOKU_X(BASE,   "Base")                     \
+    MIRYOKU_X(EXTRA,  "Extra")                  \
+    MIRYOKU_X(TAP,    "Tap")                    \
+    MIRYOKU_X(BUTTON, "Button")                 \
+    MIRYOKU_X(NAV,    "Nav")                    \
+    MIRYOKU_X(MOUSE,  "Mouse")                  \
+    MIRYOKU_X(MEDIA,  "Media")                  \
+    MIRYOKU_X(NUM,    "Num")                    \
+    MIRYOKU_X(SYM,    "Sym")                    \
+    MIRYOKU_X(FUN,    "Fun")                    \
+    MIRYOKU_X(STENO,  "Steno")
+
+#define U_BASE   0
+#define U_EXTRA  1
+#define U_TAP    2
+#define U_BUTTON 3
+#define U_NAV    4
+#define U_MOUSE  5
+#define U_MEDIA  6
+#define U_NUM    7
+#define U_SYM    8
+#define U_FUN    9
+#define U_STENO  10
