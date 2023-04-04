@@ -85,5 +85,35 @@ MIRYOKU_LAYER_LIST
       key-positions = <7 17>;
       bindings = <&sk RCTRL>;
     };
+    combo_media {
+      timeout-ms = <50>;
+      key-positions = <10 20>;
+      bindings = <&sl 6>;
+    };
+    combo_nav {
+      timeout-ms = <50>;
+      key-positions = <11 21>;
+      bindings = <&sl 4>;
+    };
+    combo_mouse {
+      timeout-ms = <50>;
+      key-positions = <12 22>;
+      bindings = <&sl 5>;
+    };
+    combo_sym {
+      timeout-ms = <50>;
+      key-positions = <17 27>;
+      bindings = <&sl 8>;
+    };
+    combo_num {
+      timeout-ms = <50>;
+      key-positions = <18 28>;
+      bindings = <&sl 7>;
+    };
+    combo_fun {
+      timeout-ms = <50>;
+      key-positions = <19 29>;
+      bindings = <&sl 9>;
+    };
   };
   };
