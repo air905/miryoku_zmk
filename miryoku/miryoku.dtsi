@@ -133,8 +133,8 @@ MIRYOKU_LAYER_LIST
     };
     combo_rbase {
       timeout-ms = <50>;
-      key-positions = <13 23>;
-      bindings = <&to U_BASE>;
+      key-positions = <16 26>;
+      bindings = <&to U_BAS
     };
   };
 };
