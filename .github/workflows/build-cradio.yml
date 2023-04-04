@@ -12,4 +12,8 @@ jobs:
       shield: '["cradio_left","cradio_right"]'
       custom_config: '["#define MIRYOKU_KLUDGE_SUSPEND"]'
       branches: '["zmkfirmware/zmk/main manna-harbour/zmk/suspend-test"]'
+  reset:
+    with:
+      board: '["nice_nano_v2"]'
+      shield: '["settings_reset"]'
 
