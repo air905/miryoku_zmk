@@ -55,10 +55,35 @@ MIRYOKU_LAYER_LIST
 / {
   combos {
     compatible = "zmk,combos";
-    combo_esc {
+    combo_lgui {
       timeout-ms = <50>;
       key-positions = <0 10>;
       bindings = <&sk LGUI>;
+    };
+    combo_rgui {
+      timeout-ms = <50>;
+      key-positions = <9 19>;
+      bindings = <&sk RGUI>;
+    };
+    combo_lalt {
+      timeout-ms = <50>;
+      key-positions = <0 10>;
+      bindings = <&sk LALT>;
+    };
+    combo_ralt {
+      timeout-ms = <50>;
+      key-positions = <9 19>;
+      bindings = <&sk RALT>;
+    };
+    combo_lctrl {
+      timeout-ms = <50>;
+      key-positions = <0 10>;
+      bindings = <&sk LCTRL>;
+    };
+    combo_rctrl {
+      timeout-ms = <50>;
+      key-positions = <9 19>;
+      bindings = <&sk RCRTL>;
     };
   };
   };
