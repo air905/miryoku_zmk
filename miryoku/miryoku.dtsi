@@ -137,6 +137,7 @@ MIRYOKU_LAYER_LIST
       bindings = <&to U_BASE>;
     };
   };
+};
 
 
 / {
