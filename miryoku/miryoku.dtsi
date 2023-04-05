@@ -98,15 +98,15 @@ MIRYOKU_LAYER_LIST
     // };
     combo_mouse {
       timeout-ms = <50>;
-      key-positions = <33 34>;
+      key-positions = <30 31>;
       bindings = <&to U_MOUSE>;
       layers = <0>;
     };
-    // combo_media {
-    //   timeout-ms = <50>;
-    //   key-positions = <11 21>;
-    //   bindings = <&sl U_MEDIA>;
-    // };
+    combo_media {
+      timeout-ms = <50>;
+      key-positions = <11 21>;
+      bindings = <&sl U_MEDIA>;
+    };
     combo_nav {
       timeout-ms = <50>;
       key-positions = <12 22>;
@@ -150,7 +150,7 @@ MIRYOKU_LAYER_LIST
    combo_bkspace {
       timeout-ms = <50>;
       key-positions = <15 16>;
-      bindings = <&sl BACKSPACE>;
+      bindings = <&kp BACKSPACE>;
     };
   };
 };
