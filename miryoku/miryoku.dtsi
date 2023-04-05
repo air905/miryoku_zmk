@@ -152,6 +152,11 @@ MIRYOKU_LAYER_LIST
       key-positions = <13 23>;
       bindings = <&kp DELETE>;
     };
+   combo_backspace {
+      timeout-ms = <50>;
+      key-positions = <35 36>;
+      bindings = <&kp BACKSPACE>;
+    };
   };
 };
 
