@@ -136,6 +136,18 @@ MIRYOKU_LAYER_LIST
     //   key-positions = <16 26>;
     //   bindings = <&mo U_BASE>;
     // };
+    combo_enter {
+      timeout-ms = <50>;
+      key-positions = <13 14>;
+      bindings = <&kp TAB>;
+   combo_tab {
+      timeout-ms = <50>;
+      key-positions = <13 23>;
+      bindings = <&kp TAB>;
+   combo_bkspace {
+      timeout-ms = <50>;
+      key-positions = <15 16>;
+      bindings = <&mo U_FUN>;
   };
 };
 
