@@ -139,22 +139,22 @@ MIRYOKU_LAYER_LIST
     // };
     combo_enter {
       timeout-ms = <50>;
-      key-positions = <15 16>;
+      key-positions = <13 14>;
       bindings = <&kp ENTER>;
     };
-   combo_tab {
-      timeout-ms = <50>;
-      key-positions = <13 14>;
-      bindings = <&kp TAB>;
-    };
-   combo_delete {
+   // combo_tab {
+   //    timeout-ms = <50>;
+   //    key-positions = <13 14>;
+   //    bindings = <&kp TAB>;
+   //  };
+   combo_mouse {
       timeout-ms = <50>;
       key-positions = <13 23>;
-      bindings = <&kp DELETE>;
+      bindings = <&sl U_MOUSE>;
     };
    combo_backspace {
       timeout-ms = <50>;
-      key-positions = <35 36>;
+      key-positions = <15 16>;
       bindings = <&kp BACKSPACE>;
     };
   };
