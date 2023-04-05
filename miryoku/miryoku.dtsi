@@ -139,18 +139,18 @@ MIRYOKU_LAYER_LIST
     // };
     combo_enter {
       timeout-ms = <50>;
-      key-positions = <13 14>;
+      key-positions = <15 16>;
       bindings = <&kp ENTER>;
     };
    combo_tab {
       timeout-ms = <50>;
-      key-positions = <13 23>;
+      key-positions = <13 14>;
       bindings = <&kp TAB>;
     };
-   combo_bkspace {
+   combo_delete {
       timeout-ms = <50>;
-      key-positions = <15 16>;
-      bindings = <&kp BACKSPACE>;
+      key-positions = <13 23>;
+      bindings = <&kp DELETE>;
     };
   };
 };
