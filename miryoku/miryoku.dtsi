@@ -58,22 +58,22 @@ MIRYOKU_LAYER_LIST
     compatible = "zmk,combos";
     combo_lalt {
       timeout-ms = <50>;
-      key-positions = <0 10>;
-      bindings = <&to LALT>;
+      key-positions = <1 11>;
+      bindings = <&mo LALT>;
     };
     combo_ralt {
       timeout-ms = <50>;
-      key-positions = <9 19>;
+      key-positions = <8 18>;
       bindings = <&sk RALT>;
     };
     combo_lgui {
       timeout-ms = <50>;
-      key-positions = <1 11>;
+      key-positions = <3 13>;
       bindings = <&sk LGUI>;
     };
     combo_rgui {
       timeout-ms = <50>;
-      key-positions = <8 18>;
+      key-positions = <6 16>;
       bindings = <&sk RGUI>;
     };
     combo_lctrl {
@@ -86,16 +86,16 @@ MIRYOKU_LAYER_LIST
       key-positions = <7 17>;
       bindings = <&sk RCTRL>;
     };
-    combo_lshift {
-      timeout-ms = <50>;
-      key-positions = <3 13>;
-      bindings = <&sk LSHIFT>;
-    };
-    combo_rshift {
-      timeout-ms = <50>;
-      key-positions = <6 16>;
-      bindings = <&sk RSHIFT>;
-    };
+    // combo_lshift {
+    //   timeout-ms = <50>;
+    //   key-positions = <3 13>;
+    //   bindings = <&sk LSHIFT>;
+    // };
+    // combo_rshift {
+    //   timeout-ms = <50>;
+    //   key-positions = <6 16>;
+    //   bindings = <&sk RSHIFT>;
+    // };
     combo_mouse {
       timeout-ms = <50>;
       key-positions = <10 20>;
@@ -104,38 +104,38 @@ MIRYOKU_LAYER_LIST
     combo_media {
       timeout-ms = <50>;
       key-positions = <11 21>;
-      bindings = <&to U_MEDIA>;
+      bindings = <&mo U_MEDIA>;
     };
     combo_nav {
       timeout-ms = <50>;
       key-positions = <12 22>;
-      bindings = <&to U_NAV>;
+      bindings = <&mo U_NAV>;
     };
-    combo_lbase {
-      timeout-ms = <50>;
-      key-positions = <13 23>;
-      bindings = <&to U_BASE>;
-    };
+    // combo_lbase {
+    //   timeout-ms = <50>;
+    //   key-positions = <13 23>;
+    //   bindings = <&mo U_BASE>;
+    // };
     combo_sym {
       timeout-ms = <50>;
-      key-positions = <17 27>;
-      bindings = <&to U_SYM>;
+      key-positions = <16 26>;
+      bindings = <&mo U_SYM>;
     };
     combo_num {
       timeout-ms = <50>;
-      key-positions = <18 28>;
-      bindings = <&to U_NUM>;
+      key-positions = <17 27>;
+      bindings = <&mo U_NUM>;
     };
     combo_fun {
       timeout-ms = <50>;
-      key-positions = <19 29>;
-      bindings = <&to U_FUN>;
+      key-positions = <18 28>;
+      bindings = <&mo U_FUN>;
     };
-    combo_rbase {
-      timeout-ms = <50>;
-      key-positions = <16 26>;
-      bindings = <&to U_BASE>;
-    };
+    // combo_rbase {
+    //   timeout-ms = <50>;
+    //   key-positions = <16 26>;
+    //   bindings = <&mo U_BASE>;
+    // };
   };
 };
 
