@@ -18,9 +18,9 @@
 #define MIRYOKU_LAYER_TAP       \
   &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT, \
     &kp A,             &kp R,             &kp S,             &kp T,             &kp G,             &kp M,             &kp N,             &kp E,             &kp I,             &kp O, \
-&kp Z,       &kp X,     &kp C,             &to U_BASE,             &kp V,             &kp K,             &kp H,             &kp COMMA,         &kp DOT,   &kp SLASH, \
-      /* &kp LALT,       &kp LGUI,     &kp LCTRL,             &kp LSHIFT,             &kp V,             &kp K,             &kp LSHIFT,             &kp RCTRL,         &kp RGUI,   &kp RALT, \ */
+&kp Z,       &kp X,     &kp C,             &to U,             &kp V,             &kp K,             &kp H,             &kp COMMA,         &kp DOT,   &kp SLASH, \
     U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp TAB,           &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
+/* &kp LALT,       &kp LGUI,     &kp LCTRL,             &kp LSHIFT,             &kp V,             &kp K,             &kp LSHIFT,             &kp RCTRL,         &kp RGUI,   &kp RALT, \ */
 
 
 #define MIRYOKU_LAYER_MOUSE                                      \
