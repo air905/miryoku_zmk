@@ -59,7 +59,7 @@ MIRYOKU_LAYER_LIST
     combo_lalt {
       timeout-ms = <50>;
       key-positions = <1 11>;
-      bindings = <&mo LALT>;
+      bindings = <&sl LALT>;
     };
     combo_ralt {
       timeout-ms = <50>;
@@ -101,40 +101,40 @@ MIRYOKU_LAYER_LIST
       key-positions = <10 20>;
       bindings = <&to U_MOUSE>;
     };
-    combo_media {
-      timeout-ms = <50>;
-      key-positions = <11 21>;
-      bindings = <&mo U_MEDIA>;
-    };
+    // combo_media {
+    //   timeout-ms = <50>;
+    //   key-positions = <11 21>;
+    //   bindings = <&sl U_MEDIA>;
+    // };
     combo_nav {
       timeout-ms = <50>;
       key-positions = <12 22>;
-      bindings = <&mo U_NAV>;
+      bindings = <&sl U_NAV>;
     };
     // combo_lbase {
     //   timeout-ms = <50>;
     //   key-positions = <13 23>;
-    //   bindings = <&mo U_BASE>;
+    //   bindings = <&sl U_BASE>;
     // };
     combo_sym {
       timeout-ms = <50>;
       key-positions = <16 26>;
-      bindings = <&mo U_SYM>;
+      bindings = <&sl U_SYM>;
     };
     combo_num {
       timeout-ms = <50>;
       key-positions = <17 27>;
-      bindings = <&mo U_NUM>;
+      bindings = <&sl U_NUM>;
     };
     combo_fun {
       timeout-ms = <50>;
       key-positions = <18 28>;
-      bindings = <&mo U_FUN>;
+      bindings = <&sl U_FUN>;
     };
     // combo_rbase {
     //   timeout-ms = <50>;
     //   key-positions = <16 26>;
-    //   bindings = <&mo U_BASE>;
+    //   bindings = <&sl U_BASE>;
     // };
     combo_enter {
       timeout-ms = <50>;
@@ -149,7 +149,7 @@ MIRYOKU_LAYER_LIST
    combo_bkspace {
       timeout-ms = <50>;
       key-positions = <15 16>;
-      bindings = <&mo U_FUN>;
+      bindings = <&sl U_FUN>;
     };
   };
 };
