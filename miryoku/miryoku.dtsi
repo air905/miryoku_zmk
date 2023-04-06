@@ -54,25 +54,33 @@ MIRYOKU_LAYER_LIST
 // My configs
 
 
+MIRYOKU_KLUDGE_THUMBCOMBOS_MACRO(U_BASE, RIGHT, &lt U_SYM DEL)
 
 / {
     behaviors {
-        td_mt: tap_dance_mod_tap {
+  u_mt: u_mt {
+      compatible = "zmk,behavior-hold-tap";
+      label = "u_mt";
+      #binding-cells = <2>;
+      tapping_term_ms = <U_TAPPING_TERM>;
+      flavor = "tap-preferred";
+      bindings = <&sk>, <&kp>;
+    };
+  u_lt: u_lt {
+      compatible = "zmk,behavior-hold-tap";
+      label = "u_lt";
+      #binding-cells = <2>;
+      tapping_term_ms = <U_TAPPING_TERM>;
+      flavor = "tap-preferred";
+      bindings = <&sl>, <&kp>;
+    };
+  u_td_shift: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MOD_TAP";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LSHIFT>, <&kp CAPSLOCK>;
+            bindings = <&sk LSHIFT>, <&kp CAPSLOCK>;
         };
     };
 
-    keymap {
-        compatible = "zmk,keymap";
-
-        default_layer {
-            bindings = <
-                &td_mt
-            >;
-        };
-    };
 };
