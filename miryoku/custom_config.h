@@ -7,3 +7,4 @@
     U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             &kp D,             &kp V,             &kp K,             &kp H,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH), \
     U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_NUM, LSHIFT),  &key_repeat, U_LT(U_SYM, DEL),  U_NP,              U_NP
 
+MIRYOKU_KLUDGE_THUMBCOMBOS_MACRO(U_BASE, RIGHT, &lt U_SYM Del)
