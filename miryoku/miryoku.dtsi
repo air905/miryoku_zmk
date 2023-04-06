@@ -53,8 +53,12 @@ MIRYOKU_LAYER_LIST
 
 // My configs
 
-
-MIRYOKU_KLUDGE_THUMBCOMBOS_MACRO(U_BASE, RIGHT, &lt U_SYM DEL)
+/ {
+  combos {
+    compatible = "zmk,combos";
+    MIRYOKU_KLUDGE_THUMBCOMBOS_MACRO(U_BASE, RIGHT, &lt U_SYM DEL)
+  };
+};
 
 / {
     behaviors {
