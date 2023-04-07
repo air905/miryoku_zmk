@@ -38,7 +38,4 @@
 #define U_LT_TO(LAYER, TAP) &u_lt_to LAYER TAP
 
 #define U_TAPPING_TERM 150
-                                                                           
-#define U_MOUSE_SCROLL_MAX 16
-#define U_MOUSE_SCROLL_EXPONENT 0
 
