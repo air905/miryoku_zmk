@@ -60,6 +60,10 @@ MIRYOKU_LAYER_LIST
   };
 };
 
+&key_repeat {
+    usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
+};
+
 / {
     behaviors {
   u_mt: u_mt {
@@ -96,6 +100,3 @@ MIRYOKU_LAYER_LIST
 //       bindings = <&sl U_NUM>, <&u_td_shift>;
 //     };
 // };
-&key_repeat {
-    usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
-};
