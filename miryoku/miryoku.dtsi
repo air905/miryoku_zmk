@@ -57,12 +57,12 @@ MIRYOKU_LAYER_LIST
     usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
 };
 
-// / {
-//   combos {
-//     compatible = "zmk,combos";
-//         MIRYOKU_KLUDGE_THUMBCOMBOS_MACRO(U_BASE, RIGHT, &lt U_SYM DEL)
-//   };
-// };
+/ {
+  combos {
+    compatible = "zmk,combos";
+        MIRYOKU_KLUDGE_THUMBCOMBOS_MACRO(U_BASE, RIGHT, &lt U_SYM DEL)
+  };
+};
 
 // / {
 //     behaviors {
