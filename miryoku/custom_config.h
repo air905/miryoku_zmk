@@ -25,6 +25,11 @@
     U_NA,              &kp RALT,          &u_to_U_SYM,       &u_to_U_MOUSE,     U_NA,              U_NU,              U_WH_L,            U_WH_D,            U_WH_U,            U_WH_R, \
     U_NP,              U_NP,              U_NA,              &to U_BASE,              &to U_BASE,              U_BTN1,            U_BTN2,            U_BTN3,            U_NP,              U_NP
 
+#define MIRYOKU_LAYER_TAP                                               \
+  &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT, \
+    &kp A,             &kp R,             &kp S,             &kp T,             &kp G,             &kp M,             &kp N,             &kp E,             &kp I,             &kp O, \
+    &kp Z,       &kp X,     &kp C,             &to U_BASE,             &kp V,             &kp K,             &kp H,             &kp COMMA,         &kp DOT,   &kp SLASH, \
+    U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp TAB,           &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
 
 #define U_MT(MOD, TAP) &u_mt MOD TAP
