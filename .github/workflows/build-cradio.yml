@@ -10,6 +10,6 @@ jobs:
     with:
       board: '["nice_nano_v2"]'
       shield: '["cradio_left"]'
-      # custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
-      # kconfig: '["CONFIG_ZMK_)MOUSE=y"]'
-      # branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
+      custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
+      kconfig: '["CONFIG_ZMK_)MOUSE=y"]'
+      branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
