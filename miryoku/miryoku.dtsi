@@ -57,6 +57,25 @@ MIRYOKU_LAYER_LIST
     usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
 };
 
+//   u_td_shift: u_td_shift {
+//             compatible = "zmk,behavior-tap-dance";
+//             label = "u_td_shift";
+//             #binding-cells = <0>;
+//             tapping-term-ms = <200>;
+//             bindings = <&sk LSHIFT>, <&kp CAPSLOCK>;
+//         };
+//     };
+//   u_lt_td_shift: u_lt_td_shift {
+//       compatible = "zmk,behavior-hold-tap";
+//       label = "u_lt_td_shift";
+//       #binding-cells = <2>;
+//       tapping_term_ms = <U_TAPPING_TERM>;
+//       flavor = "tap-preferred";
+//       bindings = <&sl U_NUM>, <&u_td_shift>;
+//     };
+  };
+};
+    
 / {
     behaviors {
   u_mt: u_mt {
@@ -83,25 +102,6 @@ MIRYOKU_LAYER_LIST
       flavor = "tap-preferred";
       bindings = <&to>, <&kp>;
     };
-    
-//   u_td_shift: u_td_shift {
-//             compatible = "zmk,behavior-tap-dance";
-//             label = "u_td_shift";
-//             #binding-cells = <0>;
-//             tapping-term-ms = <200>;
-//             bindings = <&sk LSHIFT>, <&kp CAPSLOCK>;
-//         };
-//     };
-//   u_lt_td_shift: u_lt_td_shift {
-//       compatible = "zmk,behavior-hold-tap";
-//       label = "u_lt_td_shift";
-//       #binding-cells = <2>;
-//       tapping_term_ms = <U_TAPPING_TERM>;
-//       flavor = "tap-preferred";
-//       bindings = <&sl U_NUM>, <&u_td_shift>;
-//     };
-  };
-};
 
 / {
   combos {
@@ -109,25 +109,10 @@ MIRYOKU_LAYER_LIST
         MIRYOKU_KLUDGE_THUMBCOMBOS_MACRO(U_BASE, RIGHT, &lt U_SYM DEL)
   };
 };
-// / {
-//     macros {
-//         zed_em_kay: zed_em_kay {
-//             label = "ZM_zed_em_kay";
-//             compatible = "zmk,behavior-macro";
-//             #binding-cells = <0>;
-//             bindings
-//                 = <&macro_press &kp LSHFT>
-//                 , <&macro_tap &kp Z &kp M &kp K>
-//                 , <&macro_release &kp LSHFT>
-//                 ;
-//         };
-//     };
-// };
-
 / {
     macros {
-        change-mouse-speed: change-mouse-speed {
-            label = "ZM_change-mouse-speed";
+        zed_em_kay: zed_em_kay {
+            label = "ZM_zed_em_kay";
             compatible = "zmk,behavior-macro";
             #binding-cells = <1>;
             bindings
@@ -138,3 +123,18 @@ MIRYOKU_LAYER_LIST
         };
     };
 };
+
+// / {
+//     macros {
+//         change-mouse-speed: change-mouse-speed {
+//             label = "ZM_change-mouse-speed";
+//             compatible = "zmk,behavior-macro";
+//             #binding-cells = <1>;
+//             bindings
+//                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+//                 , <&macro_tap &kp>
+//                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+//                 ;
+//         };
+//     };
+// };
