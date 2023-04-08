@@ -111,17 +111,17 @@ MIRYOKU_LAYER_LIST
 };
 
 
-/ {
-    macros {
-        change-mouse-speed: change-mouse-speed {
-            label = "change-mouse-speed";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <1>;
-            bindings
-                = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap <&kp>
-                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
-                ;
-        };
-    };
-};
+// / {
+//     macros {
+//         change-mouse-speed: change-mouse-speed {
+//             label = "change-mouse-speed";
+//             compatible = "zmk,behavior-macro";
+//             #binding-cells = <1>;
+//             bindings
+//                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+//                 , <&macro_tap &kp>
+//                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+//                 ;
+//         };
+//     };
+// };
