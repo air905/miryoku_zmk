@@ -84,14 +84,14 @@ MIRYOKU_LAYER_LIST
       flavor = "tap-preferred";
       bindings = <&to>, <&kp>;
     };
-//   u_td_shift: u_td_shift {
-//             compatible = "zmk,behavior-tap-dance";
-//             label = "u_td_shift";
-//             #binding-cells = <0>;
-//             tapping-term-ms = <200>;
-//             bindings = <&lt U_NUM LSHIFT>, <&kp CAPSLOCK>;
-//         };
-//     };
+  u_td_shift: u_td_shift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "u_td_shift";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&lt U_NUM LSHIFT>, <&kp CAPSLOCK>;
+        };
+    };
 //   u_lt_td_shift: u_lt_td_shift {
 //       compatible = "zmk,behavior-hold-tap";
 //       label = "u_lt_td_shift";
