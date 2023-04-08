@@ -91,7 +91,6 @@ MIRYOKU_LAYER_LIST
             tapping-term-ms = <200>;
             bindings = <&lt U_NUM LSHIFT>, <&kp CAPSLOCK>;
         };
-    };
 //   u_lt_td_shift: u_lt_td_shift {
 //       compatible = "zmk,behavior-hold-tap";
 //       label = "u_lt_td_shift";
