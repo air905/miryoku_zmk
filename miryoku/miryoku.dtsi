@@ -113,10 +113,10 @@ MIRYOKU_LAYER_LIST
         zed_em_kay: zed_em_kay {
             label = "ZM_zed_em_kay";
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            #binding-cells = <1>;
             bindings
                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &kp J>
+                , <&macro_tap &kp>
                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 ;
         };
