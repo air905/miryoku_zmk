@@ -116,7 +116,7 @@ MIRYOKU_LAYER_LIST
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &kp j>
+                , <&macro_tap &kp J>
                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 ;
         };
