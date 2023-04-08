@@ -83,6 +83,7 @@ MIRYOKU_LAYER_LIST
       flavor = "tap-preferred";
       bindings = <&to>, <&kp>;
     };
+};
 / {
     macros {
         change-mouse-speed: change-mouse-speed {
@@ -96,7 +97,6 @@ MIRYOKU_LAYER_LIST
                 ;
         };
     };
-};
     
 //   u_td_shift: u_td_shift {
 //             compatible = "zmk,behavior-tap-dance";
