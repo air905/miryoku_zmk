@@ -105,6 +105,7 @@ MIRYOKU_LAYER_LIST
   combos {
     compatible = "zmk,combos";
         MIRYOKU_KLUDGE_THUMBCOMBOS_MACRO(U_BASE, RIGHT, &lt U_SYM DEL)
+        MIRYOKU_KLUDGE_THUMBCOMBOS_MACRO(U_SYM, LEFT, &kp RPAR)
   };
 };
 / {
