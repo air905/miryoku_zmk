@@ -89,7 +89,7 @@ MIRYOKU_LAYER_LIST
 //             label = "u_td_shift";
 //             #binding-cells = <0>;
 //             tapping-term-ms = <200>;
-//             bindings = <&sk LSHIFT>, <&kp CAPSLOCK>;
+//             bindings = <&lt U_NUM LSHIFT>, <&kp CAPSLOCK>;
 //         };
 //     };
 //   u_lt_td_shift: u_lt_td_shift {
@@ -113,10 +113,10 @@ MIRYOKU_LAYER_LIST
         zed_em_kay: zed_em_kay {
             label = "ZM_zed_em_kay";
             compatible = "zmk,behavior-macro";
-            #binding-cells = <1>;
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap <&kp>>
+                , <&macro_tap &kp 1>
                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 ;
         };
