@@ -51,13 +51,6 @@ MIRYOKU_LAYER_LIST
   #include "miryoku_behaviors.dtsi"
 #endif
 
-// My configs
-
-&key_repeat {
-    usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
-};
-
-    
 / {
     behaviors {
   u_mt: u_mt {
@@ -110,8 +103,8 @@ MIRYOKU_LAYER_LIST
 };
 / {
     macros {
-        mouse: zed_em_kay {
-            label = "ZM_zed_em_kay";
+        mouse-speed-1: mouse-speed-1 {
+            label = "ZM-mouse-speed-1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -119,8 +112,42 @@ MIRYOKU_LAYER_LIST
                 , <&macro_tap &kp 1>
                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 ;
+        mouse-speed-2: mouse-speed-2 {
+            label = "ZM-mouse-speed-2";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+                , <&macro_tap &kp 2>
+                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+                ;
         };
+        mouse-speed-3: mouse-speed-3 {
+            label = "ZM-mouse-speed-3";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+                , <&macro_tap &kp 3>
+                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+                ;
+        mouse-speed-4: mouse-speed-4 {
+            label = "ZM_mouse-speed-4";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+                , <&macro_tap &kp 4>
+                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+                ;
     };
+};
+
+// My configs
+
+    
+&key_repeat {
+    usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
 };
 
 // / {
