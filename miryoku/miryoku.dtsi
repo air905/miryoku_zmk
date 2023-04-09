@@ -117,7 +117,7 @@ MIRYOKU_LAYER_LIST
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &kp 1>
+                , <&macro_tap &kp n>
                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 ;
         };
@@ -127,7 +127,7 @@ MIRYOKU_LAYER_LIST
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &kp 2>
+                , <&macro_tap &kp e>
                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 ;
         };
@@ -137,7 +137,7 @@ MIRYOKU_LAYER_LIST
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &kp 3>
+                , <&macro_tap &kp i>
                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 ;
         };
@@ -147,7 +147,7 @@ MIRYOKU_LAYER_LIST
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &kp 4>
+                , <&macro_tap &kp o>
                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 ;
         };
