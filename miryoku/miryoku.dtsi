@@ -23,9 +23,17 @@ MIRYOKU_LAYER_LIST
   };
 };
 
+
 #include "miryoku_shift_functions.dtsi"
 
 #include "miryoku_double_tap_guard.dtsi"
+
+
+#if defined (MIRYOKU_KLUDGE_TAPDELAY)
+  #include "miryoku_kludge_tapdelay.dtsi"
+#else
+  #include "miryoku_behaviors.dtsi"
+#endif
 
 #if defined (MIRYOKU_KLUDGE_MOUSEKEYSPR)
   #include "miryoku_kludge_mousekeyspr.dtsi"
@@ -145,11 +153,6 @@ MIRYOKU_LAYER_LIST
     };
 };
 
-#if defined (MIRYOKU_KLUDGE_TAPDELAY)
-  #include "miryoku_kludge_tapdelay.dtsi"
-#else
-  #include "miryoku_behaviors.dtsi"
-#endif
 
 // / {
 //     macros {
