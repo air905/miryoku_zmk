@@ -108,20 +108,6 @@ MIRYOKU_LAYER_LIST
         MIRYOKU_KLUDGE_THUMBCOMBOS_MACRO(U_SYM, LEFT, &kp RPAR)
   };
 };
-// / {
-//     macros {
-//         zed_em_kay: zed_em_kay {
-//             label = "ZM_zed_em_kay";
-//             compatible = "zmk,behavior-macro";
-//             #binding-cells = <0>;
-//             bindings
-//                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-//                 , <&macro_tap &kp 1>
-//                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
-//                 ;
-//         };
-//     };
-// };
 
 / {
     macros {
@@ -168,18 +154,3 @@ MIRYOKU_LAYER_LIST
     };
 };
 
-
-// / {
-//     macros {
-//         change-mouse-speed: change-mouse-speed {
-//             label = "ZM_change-mouse-speed";
-//             compatible = "zmk,behavior-macro";
-//             #binding-cells = <1>;
-//             bindings
-//                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-//                 , <&macro_tap &kp>
-//                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
-//                 ;
-//         };
-//     };
-// };
