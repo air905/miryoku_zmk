@@ -110,7 +110,7 @@ MIRYOKU_LAYER_LIST
 };
 / {
     macros {
-        zed_em_kay: zed_em_kay {
+        mouse: zed_em_kay {
             label = "ZM_zed_em_kay";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
