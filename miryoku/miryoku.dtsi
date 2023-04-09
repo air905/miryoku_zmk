@@ -103,7 +103,7 @@ MIRYOKU_LAYER_LIST
 };
 / {
     macros {
-        mouse-speed-1: mouse-speed-1 {
+        mouse_speed_1: mouse_speed_1 {
             label = "ZM-mouse-speed-1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
