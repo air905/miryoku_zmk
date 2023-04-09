@@ -151,16 +151,6 @@ MIRYOKU_LAYER_LIST
                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 ;
         };
-        mouse_speed_x: mouse_speed_x {
-            label = "ZM_mouse_speed_x";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <1>;
-            bindings
-                = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &kp>
-                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
-                ;
-        };
     };
 };
 
