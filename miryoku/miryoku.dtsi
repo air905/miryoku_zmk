@@ -108,8 +108,8 @@ MIRYOKU_LAYER_LIST
                 ;
         mouse_speed_2: mouse_speed_2 {
             label = "ZM_mouse_speed_2";
-            compatible = "zmk,behavior_macro";
-            #binding_cells = <0>;
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
                 , <&macro_tap &kp 2>
@@ -118,8 +118,8 @@ MIRYOKU_LAYER_LIST
         };
         mouse_speed_3: mouse_speed_3 {
             label = "ZM_mouse_speed_3";
-            compatible = "zmk,behavior_macro";
-            #binding_cells = <0>;
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
                 , <&macro_tap &kp 3>
@@ -127,8 +127,8 @@ MIRYOKU_LAYER_LIST
                 ;
         mouse_speed_4: mouse_speed_4 {
             label = "ZM_mouse_speed_4";
-            compatible = "zmk,behavior_macro";
-            #binding_cells = <0>;
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
                 , <&macro_tap &kp 4>
