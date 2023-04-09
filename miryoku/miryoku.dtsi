@@ -108,47 +108,47 @@ MIRYOKU_LAYER_LIST
         MIRYOKU_KLUDGE_THUMBCOMBOS_MACRO(U_SYM, LEFT, &kp RPAR)
   };
 };
-/ {
-    macros {
-        mouse_speed_1: mouse_speed_1 {
-            label = "ZM_mouse_speed_1";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &kp 1>
-                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
-                ;
-        mouse_speed_2: mouse_speed_2 {
-            label = "ZM_mouse_speed_2";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &kp 2>
-                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
-                ;
-        };
-        mouse_speed_3: mouse_speed_3 {
-            label = "ZM_mouse_speed_3";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &kp 3>
-                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
-                ;
-        mouse_speed_4: mouse_speed_4 {
-            label = "ZM_mouse_speed_4";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &kp 4>
-                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
-                ;
-    };
-};
+// / {
+//     macros {
+//         mouse_speed_1: mouse_speed_1 {
+//             label = "ZM_mouse_speed_1";
+//             compatible = "zmk,behavior-macro";
+//             #binding-cells = <0>;
+//             bindings
+//                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+//                 , <&macro_tap &kp 1>
+//                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+//                 ;
+//         mouse_speed_2: mouse_speed_2 {
+//             label = "ZM_mouse_speed_2";
+//             compatible = "zmk,behavior-macro";
+//             #binding-cells = <0>;
+//             bindings
+//                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+//                 , <&macro_tap &kp 2>
+//                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+//                 ;
+//         };
+//         mouse_speed_3: mouse_speed_3 {
+//             label = "ZM_mouse_speed_3";
+//             compatible = "zmk,behavior-macro";
+//             #binding-cells = <0>;
+//             bindings
+//                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+//                 , <&macro_tap &kp 3>
+//                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+//                 ;
+//         mouse_speed_4: mouse_speed_4 {
+//             label = "ZM_mouse_speed_4";
+//             compatible = "zmk,behavior-macro";
+//             #binding-cells = <0>;
+//             bindings
+//                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+//                 , <&macro_tap &kp 4>
+//                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+//                 ;
+//     };
+// };
 
 
 // / {
