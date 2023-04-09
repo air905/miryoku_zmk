@@ -45,12 +45,6 @@ MIRYOKU_LAYER_LIST
   #include "miryoku_kludge_bottomrowcombos.dtsi"
 #endif
 
-#if defined (MIRYOKU_KLUDGE_TAPDELAY)
-  #include "miryoku_kludge_tapdelay.dtsi"
-#else
-  #include "miryoku_behaviors.dtsi"
-#endif
-
 / {
     behaviors {
   u_mt: u_mt {
@@ -104,7 +98,7 @@ MIRYOKU_LAYER_LIST
 / {
     macros {
         mouse_speed_1: mouse_speed_1 {
-            label = "ZM-mouse-speed-1";
+            label = "ZM_mouse_speed_1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -112,29 +106,29 @@ MIRYOKU_LAYER_LIST
                 , <&macro_tap &kp 1>
                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 ;
-        mouse-speed-2: mouse-speed-2 {
-            label = "ZM-mouse-speed-2";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+        mouse_speed_2: mouse_speed_2 {
+            label = "ZM_mouse_speed_2";
+            compatible = "zmk,behavior_macro";
+            #binding_cells = <0>;
             bindings
                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
                 , <&macro_tap &kp 2>
                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 ;
         };
-        mouse-speed-3: mouse-speed-3 {
-            label = "ZM-mouse-speed-3";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+        mouse_speed_3: mouse_speed_3 {
+            label = "ZM_mouse_speed_3";
+            compatible = "zmk,behavior_macro";
+            #binding_cells = <0>;
             bindings
                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
                 , <&macro_tap &kp 3>
                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 ;
-        mouse-speed-4: mouse-speed-4 {
-            label = "ZM_mouse-speed-4";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+        mouse_speed_4: mouse_speed_4 {
+            label = "ZM_mouse_speed_4";
+            compatible = "zmk,behavior_macro";
+            #binding_cells = <0>;
             bindings
                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
                 , <&macro_tap &kp 4>
@@ -142,6 +136,12 @@ MIRYOKU_LAYER_LIST
                 ;
     };
 };
+
+#if defined (MIRYOKU_KLUDGE_TAPDELAY)
+  #include "miryoku_kludge_tapdelay.dtsi"
+#else
+  #include "miryoku_behaviors.dtsi"
+#endif
 
 // My configs
 
