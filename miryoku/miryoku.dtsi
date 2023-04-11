@@ -111,6 +111,16 @@ MIRYOKU_LAYER_LIST
 
 / {
     macros {
+        // mouse_speed_1: mouse_speed_1 {
+        //     label = "ZM_mouse_speed_1";
+        //     compatible = "zmk,behavior-macro";
+        //     #binding-cells = <0>;
+        //     bindings
+        //         = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+        //         , <&macro_tap &kp N>
+        //         , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+        //         ;
+        // };
         mouse_speed_1: mouse_speed_1 {
             label = "ZM_mouse_speed_1";
             compatible = "zmk,behavior-macro";
@@ -148,6 +158,10 @@ MIRYOKU_LAYER_LIST
             bindings
                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
                 , <&macro_tap &kp O>
+                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+                , <&macro_pause_for_release>
+                = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+                , <&macro_tap &sk N>
                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 ;
         };
