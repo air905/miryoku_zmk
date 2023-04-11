@@ -160,7 +160,7 @@ MIRYOKU_LAYER_LIST
                 , <&macro_tap &kp O>
                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 , <&macro_pause_for_release>
-                = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+                , <&macro_press &kp LGUI &kp LALT &kp LCTRL>
                 , <&macro_tap &sk N>
                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 ;
