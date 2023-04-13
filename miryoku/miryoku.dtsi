@@ -136,6 +136,7 @@ MIRYOKU_LAYER_LIST
             bindings
                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
                 , <&macro_tap &kp N>
+                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 , <&macro_pause_for_release>
                 , <&macro_press &kp LGUI &kp LALT &kp LCTRL>
                 , <&macro_tap &sk U>
@@ -149,6 +150,7 @@ MIRYOKU_LAYER_LIST
             bindings
                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
                 , <&macro_tap &kp E>
+                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 , <&macro_pause_for_release>
                 , <&macro_press &kp LGUI &kp LALT &kp LCTRL>
                 , <&macro_tap &sk U>
@@ -162,6 +164,7 @@ MIRYOKU_LAYER_LIST
             bindings
                 = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
                 , <&macro_tap &kp I>
+                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 , <&macro_pause_for_release>
                 , <&macro_press &kp LGUI &kp LALT &kp LCTRL>
                 , <&macro_tap &sk U>
