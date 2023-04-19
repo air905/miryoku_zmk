@@ -64,13 +64,13 @@ MIRYOKU_LAYER_LIST
 
 / {
     behaviors {
-      skq: sticky_key_quick_release_for_shift {
-        compatible = "zmk,behavior-sticky-key";
-        label = "STICKY_KEY_QUICK_RELEASE";
-        #binding-cells = <1>;
-        bindings = <&kp>;
-        quick-release;
-      };
+      // skq: sticky_key_quick_release_for_shift {
+      //   compatible = "zmk,behavior-sticky-key";
+      //   label = "STICKY_KEY_QUICK_RELEASE";
+      //   #binding-cells = <1>;
+      //   bindings = <&kp>;
+      //   quick-release;
+      // };
     
   u_mt: u_mt {
       compatible = "zmk,behavior-hold-tap";
