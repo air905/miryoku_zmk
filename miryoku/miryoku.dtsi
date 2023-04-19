@@ -58,6 +58,7 @@ MIRYOKU_LAYER_LIST
     usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
 };
 &sk {
+    release-after-ms = <2000>;
     quick-release;
 };
 
