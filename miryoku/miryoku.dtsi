@@ -57,9 +57,20 @@ MIRYOKU_LAYER_LIST
 &key_repeat {
     usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
 };
+&sk {
+    quick-release;
+};
 
 / {
     behaviors {
+      skq: sticky_key_quick_release_for_shift {
+        compatible = "zmk,behavior-sticky-key";
+        label = "STICKY_KEY_QUICK_RELEASE";
+        #binding-cells = <1>;
+        bindings = <&kp>;
+        quick-release;
+      };
+    
   u_mt: u_mt {
       compatible = "zmk,behavior-hold-tap";
       label = "u_mt";
