@@ -198,6 +198,16 @@ MIRYOKU_LAYER_LIST
                 , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
                 ;
         };
+        hint_mode: hint_mode {
+            label = "ZM_hint_mode";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp LALT &kp LSHIFT>
+                , <&macro_tap &kp X>
+                , <&macro_release &kp LGUI &kp LALT &kp LSHIFT>
+                ;
+        };
         
   // u_mt_mouse: u_mt_mouse {
   //     compatible = "zmk,behavior-hold-tap";
