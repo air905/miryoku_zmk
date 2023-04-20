@@ -203,6 +203,16 @@ MIRYOKU_LAYER_LIST
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
+                = <&macro_press &kp LGUI &kp LALT>
+                , <&macro_tap &kp X>
+                , <&macro_release &kp LGUI &kp LALT>
+                ;
+        };
+        hint2_mode: hint2_mode {
+            label = "ZM_hint2_mode";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
                 = <&macro_press &kp LGUI &kp LALT &kp LSHIFT>
                 , <&macro_tap &kp X>
                 , <&macro_release &kp LGUI &kp LALT &kp LSHIFT>
