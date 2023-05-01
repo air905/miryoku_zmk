@@ -204,7 +204,7 @@ MIRYOKU_LAYER_LIST
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI &kp LALT>
-                , <&macro_tap &kp X>
+                , <&macro_tap &kp X &to U_TAP>
                 , <&macro_release &kp LGUI &kp LALT>
                 ;
         };
@@ -216,6 +216,15 @@ MIRYOKU_LAYER_LIST
                 = <&macro_press &kp LGUI &kp LALT &kp LSHIFT>
                 , <&macro_tap &kp X>
                 , <&macro_release &kp LGUI &kp LALT &kp LSHIFT>
+                ;
+        };
+        
+        escape_to_base: escape_to_base {
+            label = "ZM_escape_to_base";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp ESC &to U_BASE>
                 ;
         };
         
