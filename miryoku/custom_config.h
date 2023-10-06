@@ -13,11 +13,17 @@
     &kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp BSLH,          U_NA,              &u_to_U_NUM,       &u_to_U_NAV,       &kp RALT,          U_NA, \
     U_NP,              U_NP,              &kp DOT,           &kp N0,            &kp MINUS,         U_NA,              &to U_BASE,              U_NA,              U_NP,              U_NP
 
+/* #define MIRYOKU_LAYER_TAP                                               \ */
+/*   &kp Q,             &kp N7,            &kp N8,            &kp N9,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT, \ */
+/*     &kp A,             &kp N4,            &kp N5,            &kp N6,             &kp G,             &kp M,             &kp N,             &kp E,             &kp I,             &kp O, \ */
+/*     &kp Z,          &kp N1,            &kp N2,            &kp N3,             &kp V,             &kp K,             &kp H,             &kp COMMA,         &kp DOT,   &kp SLASH, \ */
+/*     U_NP,              U_NP,              &kp DOT,           &kp N0,         &kp TAB,           &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP */
+
 #define MIRYOKU_LAYER_TAP                                               \
-  &kp Q,             &kp N7,            &kp N8,            &kp N9,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT, \
-    &kp A,             &kp N4,            &kp N5,            &kp N6,             &kp G,             &kp M,             &kp N,             &kp E,             &kp I,             &kp O, \
-    &kp Z,          &kp N1,            &kp N2,            &kp N3,             &kp V,             &kp K,             &kp H,             &kp COMMA,         &kp DOT,   &kp SLASH, \
-    U_NP,              U_NP,              &kp DOT,           &kp N0,         &kp TAB,           &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
+  &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT, \
+    &kp A,             &kp R,             &kp S,             &kp T,             &kp G,             &kp M,             &kp N,             &kp E,             &kp I,             &kp O, \
+    &kp Z,       &kp X,     &kp C,             &to U_BASE,             &kp V,             &kp K,             &kp H,             &kp COMMA,         &kp DOT,   &kp SLASH, \
+    U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp TAB,           &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
 #define MIRYOKU_LAYER_SYM                                               \
   &kp LBRC,          &kp AMPS,          &kp ASTRK,         &kp LPAR,          &kp RBRC,          U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT, \
@@ -38,11 +44,6 @@
     U_NA,              &kp RALT,          &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              &kp INS,           &kp HOME,          &kp PG_DN,         &kp PG_UP,         &kp END, \
     U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
-/* #define MIRYOKU_LAYER_TAP                                               \ */
-/*   &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT, \ */
-/*     &kp A,             &kp R,             &kp S,             &kp T,             &kp G,             &kp M,             &kp N,             &kp E,             &kp I,             &kp O, \ */
-/*     &kp Z,       &kp X,     &kp C,             &to U_BASE,             &kp V,             &kp K,             &kp H,             &kp COMMA,         &kp DOT,   &kp SLASH, \ */
-/*     U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp TAB,           &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP */
 
 
 
