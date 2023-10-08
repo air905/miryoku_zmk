@@ -234,8 +234,8 @@ MIRYOKU_LAYER_LIST
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &to U_TAP>
-                , <&macro_press &kp F &kp P &kp T &kp TAB &kp B &kp F &kp N>
-                , <&macro_release &kp F &kp P &kp T &kp TAB &kp B &kp F &kp N>
+                , <&macro_press &kp F &kp P &kp T &kp TAB &kp B &kp L &kp N>
+                , <&macro_release &kp F &kp P &kp T &kp TAB &kp B &kp L &kp N>
                 ;
         };
 
