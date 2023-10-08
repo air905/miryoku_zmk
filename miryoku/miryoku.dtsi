@@ -250,7 +250,7 @@ MIRYOKU_LAYER_LIST
                 // , <&macro_press &kp F &kp P &kp T &kp TAB &kp Y &kp I>
                 // , <&macro_release &kp F &kp P &kp T &kp TAB &kp Y &kp I>
                 , <&macro_press &kp S &kp T &kp D &kp TAB &kp I &kp PERIOD>
-                , <&macro_release &kp F &kp P &kp T &kp TAB &kp Y &kp I>
+                , <&macro_release &kp S &kp T &kp D &kp TAB &kp I &kp PERIOD>
                 ;
         };
 
@@ -260,7 +260,7 @@ MIRYOKU_LAYER_LIST
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp S &kp T &kp D &kp TAB &kp I &kp PERIOD>
-                , <&macro_release &kp F &kp P &kp T &kp TAB &kp Y &kp I>
+                , <&macro_release &kp S &kp T &kp D &kp TAB &kp I &kp PERIOD>
                 // = <&macro_press &kp F &kp P &kp T &kp TAB &kp Y &kp I>
                 // , <&macro_release &kp F &kp P &kp T &kp TAB &kp Y &kp I>
                 // = <&macro_press &kp F &kp P &kp T &kp TAB &kp B &kp J>
