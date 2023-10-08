@@ -22,7 +22,7 @@
 #define MIRYOKU_LAYER_TAP                                               \
   &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT, \
     &kp A,             &kp R,             &kp S,             &kp T,             &kp G,             &kp M,             &kp N,             &kp E,             &kp I,             &kp O, \
-    &kp Z,       &kp X,     &kp C,             &toggle_plover_off,             &kp V,             &kp K,             &kp H,             &kp COMMA,         &kp DOT,   &kp SLASH, \
+    &kp Z,       &kp X,     &kp C,             &toggle_plover,             &kp V,             &kp K,             &kp H,             &kp COMMA,         &kp DOT,   &kp SLASH, \
     U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp TAB,           &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
 #define MIRYOKU_LAYER_SYM                                               \
@@ -33,7 +33,7 @@
 
 #define MIRYOKU_LAYER_MOUSE                                      \
   &sk LGUI,              &sk LALT,          &sk LCTRL,       &sk LSHIFT,     U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND, \
-    &mouse_speed_1,          &mouse_speed_2,          &hint_mode,         &hint2_mode,         U_NA,              &toggle_plover_on,              U_MS_L,            U_MS_D,            U_MS_U,            U_MS_R, \
+    &mouse_speed_1,          &mouse_speed_2,          &hint_mode,         &hint2_mode,         U_NA,              &toggle_plover,              U_MS_L,            U_MS_D,            U_MS_U,            U_MS_R, \
     U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_NU,              U_WH_L,            U_WH_D,            U_WH_U,            U_WH_R, \
     U_NP,              U_NP,              U_NA,              &to U_BASE,              &to U_BASE,              U_BTN1,            U_BTN2,            U_BTN3,            U_NP,              U_NP
 
