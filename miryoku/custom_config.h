@@ -31,17 +31,17 @@
     &kp TILDE,         &kp EXCL,          &kp AT,            &kp HASH,          &kp PIPE,          U_NA,              &u_to_U_SYM,       &u_to_U_MOUSE,     &kp RALT,          U_NA, \
     U_NP,              U_NP,              &kp LPAR,          &kp LPAR,          &kp UNDER,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
-/* #define MIRYOKU_LAYER_MOUSE                                             \ */
-/*   &sk LGUI,              &sk LALT,          &sk LCTRL,       &sk LSHIFT,     U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND, \ */
-/*     &mouse_speed_1,          &mouse_speed_2,          &hint_mode,         &hint2_mode,         U_NA,              &toggle_plover_on,              U_MS_L,            U_MS_D,            U_MS_U,            U_MS_R, \ */
-/*     U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_NU,              U_WH_L,            U_WH_D,            U_WH_U,            U_WH_R, \ */
-/*     U_NP,              U_NP,              U_NA,              &to U_BASE,              &to U_BASE,              U_BTN1,            U_BTN2,            U_BTN3,            U_NP,              U_NP */
-
-#define MIRYOKU_LAYER_MOUSE                                      \
+#define MIRYOKU_LAYER_MOUSE                                             \
   &sk LGUI,              &sk LALT,          &sk LCTRL,       &sk LSHIFT,     U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND, \
-    &mouse_speed_1,          &mouse_speed_2,          &hint_mode,         &hint2_mode,         U_NA,              &toggle_plover_on,              &switch_to_hdmi_input_one,            &switch_to_hdmi_input_two,            U_MS_U,            U_MS_R, \
+    &mouse_speed_1,          &mouse_speed_2,          &hint_mode,         &hint2_mode,         U_NA,              &toggle_plover_on,              U_MS_L,            U_MS_D,            U_MS_U,            U_MS_R, \
     U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_NU,              U_WH_L,            U_WH_D,            U_WH_U,            U_WH_R, \
     U_NP,              U_NP,              U_NA,              &to U_BASE,              &to U_BASE,              U_BTN1,            U_BTN2,            U_BTN3,            U_NP,              U_NP
+
+/* #define MIRYOKU_LAYER_MOUSE                                      \ */
+/*   &sk LGUI,              &sk LALT,          &sk LCTRL,       &sk LSHIFT,     U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND, \ */
+/*     &mouse_speed_1,          &mouse_speed_2,          &hint_mode,         &hint2_mode,         U_NA,              &toggle_plover_on,              &switch_to_hdmi_input_one,            &switch_to_hdmi_input_two,            U_MS_U,            U_MS_R, \ */
+/*     U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_NU,              U_WH_L,            U_WH_D,            U_WH_U,            U_WH_R, \ */
+/*     U_NP,              U_NP,              U_NA,              &to U_BASE,              &to U_BASE,              U_BTN1,            U_BTN2,            U_BTN3,            U_NP,              U_NP */
 
 
 #define MIRYOKU_ALTERNATIVES_NAV                                        \
