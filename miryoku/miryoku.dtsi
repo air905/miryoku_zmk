@@ -268,6 +268,27 @@ MIRYOKU_LAYER_LIST
                 , <&macro_tap &to U_BASE>
                 ;
         };
+         switch_to_hdmi_input_one: switch_to_hdmi_input_one {
+            label = "ZM_switch_to_hdmi_input_one";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp SCROLLLOCK>
+                , <&macro_tap &kp F1>
+                , <&macro_release &kp SCROLLLOCK>
+                ;
+        };
+
+         switch_to_hdmi_input_two: switch_to_hdmi_input_two {
+            label = "ZM_switch_to_hdmi_input_two";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp SCROLLLOCK>
+                , <&macro_tap &kp F2>
+                , <&macro_release &kp SCROLLLOCK>
+                ;
+        };
   // u_mt_mouse: u_mt_mouse {
   //     compatible = "zmk,behavior-hold-tap";
   //     label = "u_mt_mouse";
