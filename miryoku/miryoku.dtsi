@@ -142,62 +142,62 @@ MIRYOKU_LAYER_LIST
         //         , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
         //         ;
         // };
-        mouse_speed_1: mouse_speed_1 {
-            label = "ZM_mouse_speed_1";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &kp N>
-                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_pause_for_release>
-                , <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &sk U>
-                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
-                ;
-        };
-        mouse_speed_2: mouse_speed_2 {
-            label = "ZM_mouse_speed_2";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &kp E>
-                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_pause_for_release>
-                , <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &sk U>
-                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
-                ;
-        };
-        mouse_speed_3: mouse_speed_3 {
-            label = "ZM_mouse_speed_3";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &kp I>
-                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_pause_for_release>
-                , <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &sk U>
-                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
-                ;
-        };
-        mouse_speed_4: mouse_speed_4 {
-            label = "ZM_mouse_speed_4";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &kp O>
-                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_pause_for_release>
-                , <&macro_press &kp LGUI &kp LALT &kp LCTRL>
-                , <&macro_tap &sk U>
-                , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
-                ;
-        };
+        // mouse_speed_1: mouse_speed_1 {
+        //     label = "ZM_mouse_speed_1";
+        //     compatible = "zmk,behavior-macro";
+        //     #binding-cells = <0>;
+        //     bindings
+        //         = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+        //         , <&macro_tap &kp N>
+        //         , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+        //         , <&macro_pause_for_release>
+        //         , <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+        //         , <&macro_tap &sk U>
+        //         , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+        //         ;
+        // };
+        // mouse_speed_2: mouse_speed_2 {
+        //     label = "ZM_mouse_speed_2";
+        //     compatible = "zmk,behavior-macro";
+        //     #binding-cells = <0>;
+        //     bindings
+        //         = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+        //         , <&macro_tap &kp E>
+        //         , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+        //         , <&macro_pause_for_release>
+        //         , <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+        //         , <&macro_tap &sk U>
+        //         , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+        //         ;
+        // };
+        // mouse_speed_3: mouse_speed_3 {
+        //     label = "ZM_mouse_speed_3";
+        //     compatible = "zmk,behavior-macro";
+        //     #binding-cells = <0>;
+        //     bindings
+        //         = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+        //         , <&macro_tap &kp I>
+        //         , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+        //         , <&macro_pause_for_release>
+        //         , <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+        //         , <&macro_tap &sk U>
+        //         , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+        //         ;
+        // };
+        // mouse_speed_4: mouse_speed_4 {
+        //     label = "ZM_mouse_speed_4";
+        //     compatible = "zmk,behavior-macro";
+        //     #binding-cells = <0>;
+        //     bindings
+        //         = <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+        //         , <&macro_tap &kp O>
+        //         , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+        //         , <&macro_pause_for_release>
+        //         , <&macro_press &kp LGUI &kp LALT &kp LCTRL>
+        //         , <&macro_tap &sk U>
+        //         , <&macro_release &kp LGUI &kp LALT &kp LCTRL>
+        //         ;
+        // };
         hint_mode: hint_mode {
             label = "ZM_hint_mode";
             compatible = "zmk,behavior-macro";
